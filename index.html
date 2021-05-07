@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Лучший в мире сайт</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/antd/4.15.2/antd.min.css"
+          integrity="sha512-sW2OY/VffZ3OJ9Gbps+88dLVF1w4FvxGkT4jJXqks04ERQj6FhQTc9DuD6n6UdeJp5zPRCGSFT7dhJHXSso63A=="
+          crossorigin="anonymous"/>
+</head>
+<body>
+<div id="app"></div>
+<script crossorigin src="https://unpkg.com/react@17/umd/react.production.min.js"></script>
+<script crossorigin src="https://unpkg.com/react-dom@17/umd/react-dom.production.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/antd/4.15.2/antd.min.js"
+        integrity="sha512-gzSgIZOTyFwBSIX3ezCnuPyUgKGsJ/tGXLZ1uF7En1I+/FTuaz7iJmazu3N+J0PkpHmSZ4Q+AmoOxkbjhi4Y7A=="
+        crossorigin="anonymous"></script>
+<script type="text/javascript">
+ var lorem = 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab asperiores aut, delectus dignissimos dolore dolorem dolorum eos hic id laboriosam minima nemo numquam, officia omnis quaerat rerum saepe sunt, tempora.'
+    function App() {
+        return (
+            React.createElement(antd.Layout, null, React.createElement(
+                antd.Layout.Header, {style: {padding: '24px', backgroundColor: 'grey'}}, React.createElement(
+                    antd.Typography.Title, {level: 2, underline: true, style: {textAlign: 'center', color: 'white'}}, 'Привет мир'),
+                React.createElement(
+                    antd.Layout.Content, {style: {padding: '24px', backgroundColor: 'aqua'}}, React.createElement(
+                        antd.Typography.Paragraph, null, lorem)
+            )))
+        )
+    }
+
+    ReactDOM.render(React.createElement(App, null, null), document.getElementById('app'))
+</script>
+</body>
+</html>
